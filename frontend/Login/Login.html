@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="Login.css">
+  </head>
+  <body>
+    <div class="main-block">
+      <h1>Login</h1>
+      <form action="/api/v1/user/login" method="post">
+        <!-- Use /api/v1/user/login as the action URL -->
+        <label id="icon" for="email"><i class="fas fa-envelope"></i></label>
+        <input type="text" name="email" id="email" placeholder="Email" required/>
+      
+        <label id="icon" for="password"><i class="fas fa-unlock-alt"></i></label>
+        <input type="password" name="password" id="password" placeholder="Password" required/>
+        <hr>
+        
+        <div class="btn-block">
+          <p>If you are <a href="/register.html">not registered, register here</a>.</p>
+          <!-- Change the button type to submit -->
+          <button type="submit">Login</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
